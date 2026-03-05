@@ -1,0 +1,51 @@
+body{
+font-family: Arial;
+text-align:center;
+margin-top:40px;
+transition: background-color 0.2s;
+}
+
+/* Animación de flash rojo suave */
+@keyframes loseFlash {
+
+0%   { background-color: rgba(255,0,0,0); }
+10%  { background-color: #ffbfbf40; }
+20%  { background-color: rgba(255,0,0,0); }
+
+30%  { background-color: #ffbfbf40; }
+40%  { background-color: rgba(255,0,0,0); }
+
+50%  { background-color: #ffbfbf40; }
+60%  { background-color: rgba(255,0,0,0); }
+
+70%  { background-color: #ffbfbf40; }
+80%  { background-color: rgba(255,0,0,0); }
+
+100% { background-color: rgba(255,0,0,0); }
+
+}
+
+.flash-lose{
+animation: loseFlash 0.8s ease;
+}
+
+button{
+font-size:20px;
+padding:15px 25px;
+margin:10px;
+cursor:pointer;
+}
+
+#score{
+margin-top:20px;
+font-size:24px;
+}
+
+#result{
+margin-top:30px;
+font-size:22px;
+}
+
+.setup{
+margin-bottom:20px;
+}

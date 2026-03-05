@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Piedra Papel Tijera</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Piedra Papel Tijera</h1>
+
+<div class="setup">
+<label>Rondas para ganar:</label>
+
+<select id="rounds">
+<option value="3">3</option>
+<option value="5">5</option>
+<option value="7">7</option>
+</select>
+
+<button onclick="startGame()">Empezar partida</button>
+</div>
+
+<h2 id="score">Jugador 0 - 0 CPU</h2>
+
+<div class="buttons">
+<button onclick="play('piedra')">🪨 Piedra</button>
+<button onclick="play('papel')">📄 Papel</button>
+<button onclick="play('tijera')">✂️ Tijera</button>
+</div>
+
+<h2 id="result"></h2>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
